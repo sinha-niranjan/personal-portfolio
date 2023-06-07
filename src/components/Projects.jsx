@@ -4,6 +4,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import projImg4 from "../assets/img/project-img4.png";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
@@ -29,10 +30,10 @@ const Projects = () => {
       link: "https://sinha-niranjan.github.io/Music-app/",
     },
     {
-      title: "",
-      description: "Design & Development",
-      imgUrl: projImg1,
-      link: "",
+      title: "Personal Portfolio",
+      description: "Portfolio - Niranjan Kumar",
+      imgUrl: projImg4,
+      link: "https://personal-portfolio-six-self.vercel.app/",
     },
     {
       title: "Business Startup",
