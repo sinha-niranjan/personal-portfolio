@@ -39,7 +39,7 @@ const Projects = () => {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
-      link: "",
+      link: "#",
     },
     {
       title: "Business Startup",

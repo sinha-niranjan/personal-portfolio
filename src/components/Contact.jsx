@@ -13,7 +13,7 @@ const Contact = () => {
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
-  const [status, setStatus] = useState({});
+  const [status, setStatus] = useState(false);
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -44,6 +44,7 @@ const Contact = () => {
     // }
     setInterval(() => {
       setButtonText("Send");
+      setStatus(true)
     },4000)
   };
 
@@ -52,7 +53,7 @@ const Contact = () => {
       <Container>
         <Row>
           <Col>
-            <img src={contactImg} alt="Image" />
+            <img src={contactImg} alt="" />
           </Col>
           <Col md={6}>
             <h2>Get In Touch</h2>
