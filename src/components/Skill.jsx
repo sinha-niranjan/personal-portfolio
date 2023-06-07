@@ -6,6 +6,8 @@ import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import colorSharp from "../assets/img/color-sharp.png";
+import TrackVisibility from "react-on-screen";
+import "animate.css";
 
 const Skill = () => {
   const responsive = {
@@ -33,14 +35,27 @@ const Skill = () => {
         <Row>
           <Col>
             <div className="skill-bx">
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__bounce" : ""
+                  }
+                >
               <h2>Skills</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
-                deserunt? Rerum corporis nostrum, dignissimos ex eius
-                perferendis br
-                <br></br>minima illo enim deserunt, nobis deleniti saepe
-                numquam?
-              </p>
+                A skilled web developer possesses a versatile toolkit to craft
+                captivating digital experiences. They master programming
+                languages like HTML, CSS, and JavaScript, while staying updated
+                with emerging technologies. Their skills encompass responsive
+                design, UX/UI principles, backend development, database
+                management, and problem-solving. They blend creativity and
+                technical expertise to build dynamic websites that leave a
+                lasting impact.
+                
+              </p></div>
+              )}
+            </TrackVisibility>
               <Carousel
                 responsive={responsive}
                 infinite={true}

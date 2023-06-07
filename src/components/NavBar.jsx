@@ -18,8 +18,7 @@ export const NavBar = () => {
       } else {
         setScrolled(false);
       }
-    }
-    
+    };
 
     window.addEventListener("scroll", onScroll);
 
@@ -66,16 +65,19 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
-                <img src={NavIcon1}alt=""></img>
+              <a href="#footer">
+                <img src={NavIcon1} alt=""></img>
                 <img src={NavIcon2} alt=""></img>
                 <img src={NavIcon3} alt=""></img>
               </a>
             </div>
+            <Nav.Link
+              href="#connect">
             <button className="vvd" onClick={() => console.log("connect")}>
               {" "}
               Let's Connect
             </button>
+            </Nav.Link>
           </span>
         </Navbar.Collapse>
       </Container>
