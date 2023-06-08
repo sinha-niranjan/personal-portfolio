@@ -6,27 +6,25 @@ import "animate.css";
 const ProjectCard = ({ title, description, imgUrl, link }) => {
   return (
     <Col sm={6} md={4}>
-      <div className="proj-imgbx">
-        <TrackVisibility>
-          {({ isVisible }) => (
-            <div
-              className={isVisible ? "animate__animated animate__heartBeat" : ""}
-            >
+      <TrackVisibility>
+        {({ isVisible }) => (
+          <div
+            className={isVisible ? "animate__animated animate__heartBeat" : ""}
+          >
+            <div className="proj-imgbx">
               <img src={imgUrl} alt="" />
               <div className="proj-txtx">
                 <h4>{title}</h4>
                 <span>{description}</span>
-                if(link != "#")
-                {
-                  <a href={link}>
-                    <p className="link">Click to Visit page </p>
-                  </a>
-                }
+
+                <a href={link}>
+                  <p className="link">Click to Visit page </p>
+                </a>
               </div>
-            </div>
-          )}
-        </TrackVisibility>
-      </div>
+            </div>{" "}
+          </div>
+        )}
+      </TrackVisibility>
     </Col>
   );
 };

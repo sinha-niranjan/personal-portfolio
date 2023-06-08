@@ -36,8 +36,8 @@ const Projects = () => {
       link: "https://personal-portfolio-six-self.vercel.app/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Whats App Clone",
+      description: "Whats Clone - Chating APP",
       imgUrl: projImg2,
       link: "#",
     },
