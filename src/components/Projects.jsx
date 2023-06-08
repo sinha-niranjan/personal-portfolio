@@ -5,6 +5,8 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.png";
+import projImg6 from "../assets/img/project-img6.png";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
@@ -35,17 +37,18 @@ const Projects = () => {
       imgUrl: projImg4,
       link: "https://personal-portfolio-six-self.vercel.app/",
     },
+
+    {
+      title: "News App",
+      description: "Read latest news",
+      imgUrl: projImg5,
+      link: "",
+    },
     {
       title: "Whats App Clone",
       description: "Whats Clone - Chating APP",
-      imgUrl: projImg2,
+      imgUrl: projImg6,
       link: "#",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      link: "",
     },
   ];
   return (
