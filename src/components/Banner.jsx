@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Nav, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
 import "animate.css";
@@ -59,7 +59,9 @@ const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
-                  className={isVisible ? "animate__animated animate__fadeIn" : ""}
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
                 >
                   <span className="tagline"> Welcome to my Portfolio</span>
                   <h1>
@@ -71,10 +73,12 @@ const Banner = () => {
                     into beautiful and functional realities, one line of code at
                     a time.
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    {" "}
-                    Let's connect <ArrowRightCircle size={25} />
-                  </button>
+                  <Nav.Link href="#connect">
+                    <button onClick={() => console.log("connect")}>
+                      {" "}
+                      Let's connect <ArrowRightCircle size={25} />
+                    </button>
+                  </Nav.Link>
                 </div>
               )}
             </TrackVisibility>

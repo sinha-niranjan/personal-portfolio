@@ -38,14 +38,15 @@ const Contact = () => {
     // if(result.code === 200){
     //     setStatus({success:true ,message: 'Message Send Successfully'})
     // }
-    // else 
+    // else
     // {
     //     setStatus({success:false,message:'Something went wrong, Please try again later'})
     // }
     setInterval(() => {
       setButtonText("Send");
-      setStatus(true)
-    },4000)
+      setFormDetails(formInitialDetails);
+      setStatus(true);
+    }, 4000);
   };
 
   return (

@@ -7,6 +7,7 @@ import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
 import projImg6 from "../assets/img/project-img6.png";
+import projImg7 from "../assets/img/project-img7.png"
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
@@ -26,10 +27,10 @@ const Projects = () => {
       link: "https://bright-marzipan-7acd42.netlify.app",
     },
     {
-      title: "Music Player",
-      description: "Listen Music",
-      imgUrl: projImg3,
-      link: "https://sinha-niranjan.github.io/Music-app/",
+      title: "Todo List",
+      description: "Manage Your Task",
+      imgUrl: projImg7,
+      link: "https://todo-list-eta-pink.vercel.app/",
     },
     {
       title: "Personal Portfolio",
@@ -51,6 +52,14 @@ const Projects = () => {
       link: "#",
     },
   ];
+  const Projects2 = [
+    {
+      title: "Music Player",
+      description: "Listen Music",
+      imgUrl: projImg3,
+      link: "https://sinha-niranjan.github.io/Music-app/",
+    }
+  ]
   return (
     <section className="project" id="projects">
       <Container>
