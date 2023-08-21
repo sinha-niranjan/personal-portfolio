@@ -75,7 +75,15 @@ const Skill = () => {
                 </div>
                 <div className="item">
                   <img src={meter1} alt="" />
-                  <h5> MongoDB </h5>
+                  <h5> Node js </h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="" />
+                  <h5> Express js </h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="" />
+                  <h5>Monog DB</h5>
                 </div>
               </Carousel>
             </div>
