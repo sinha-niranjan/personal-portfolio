@@ -7,7 +7,9 @@ import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
 import projImg6 from "../assets/img/project-img6.png";
-import projImg7 from "../assets/img/project-img7.png"
+import projImg7 from "../assets/img/project-img7.png";
+import projImg8 from "../assets/img/project-img8.png";
+import projImg9 from "../assets/img/project-img9.png";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
@@ -18,7 +20,7 @@ const Projects = () => {
       title: "Movix",
       description: "Latest Movies and Tv Shows",
       imgUrl: projImg1,
-      link: "https://movix-dxq3whzlq-sinha-niranjan.vercel.app/",
+      link: "https://movix-sinha-niranjan.vercel.app/",
     },
     {
       title: "Snake Game",
@@ -40,17 +42,17 @@ const Projects = () => {
     },
 
     {
-      title: "News App",
-      description: "Read latest news",
-      imgUrl: projImg5,
-      link: "",
+      title: "Ecommerce App",
+      description: "ecommerce app",
+      imgUrl: projImg9,
+      link: "https://frontend-mern-ecommerce-sinha-niranjan.vercel.app/",
+    },{
+      title: "Youtube-Clone",
+      description: "Youtube Clone - video watching app",
+      imgUrl: projImg8,
+      link: "https://youttube-clone-sinha-niranjan.vercel.app/",
     },
-    {
-      title: "Whats App Clone",
-      description: "Whats Clone - Chating APP",
-      imgUrl: projImg6,
-      link: "#",
-    },
+    
   ];
   const Projects2 = [
     {
@@ -58,7 +60,19 @@ const Projects = () => {
       description: "Listen Music",
       imgUrl: projImg3,
       link: "https://sinha-niranjan.github.io/Music-app/",
-    }
+    },
+    {
+      title: "Whats App Clone",
+      description: "Whats Clone - Chating APP",
+      imgUrl: projImg6,
+      link: "#",
+    },
+    {
+      title: "News App",
+      description: "Read latest news",
+      imgUrl: projImg5,
+      link: "",
+    },
   ]
   return (
     <section className="project" id="projects">
