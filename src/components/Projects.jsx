@@ -112,7 +112,15 @@ const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Loren Ipsum</Tab.Pane>
+                <Tab.Pane eventKey="second"> <Row>
+                    {Projects2.map((project, index) => {
+                      return (
+                        <>
+                          <ProjectCard key={index} {...project} />
+                        </>
+                      );
+                    })}
+                  </Row></Tab.Pane>
                 <Tab.Pane eventKey="third">Loren Ipsum</Tab.Pane>
               </Tab.Content>
             </Tab.Container>
