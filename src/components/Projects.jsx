@@ -10,6 +10,8 @@ import projImg6 from "../assets/img/project-img6.png";
 import projImg7 from "../assets/img/project-img7.png";
 import projImg8 from "../assets/img/project-img8.png";
 import projImg9 from "../assets/img/project-img9.png";
+import projImg10 from "../assets/img/project-img10.png";
+import projImg11 from "../assets/img/project-img11.png";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
@@ -29,11 +31,13 @@ const Projects = () => {
       link: "https://bright-marzipan-7acd42.netlify.app",
     },
     {
-      title: "Todo List",
-      description: "Manage Your Task",
-      imgUrl: projImg7,
-      link: "https://todo-list-eta-pink.vercel.app/",
+      title: "Todo app",
+      description:
+        "a website which is created using next js 14 and user can see and set task after login",
+      imgUrl: projImg10,
+      link: "https://todoapp-nextjs-three.vercel.app/",
     },
+
     {
       title: "Personal Portfolio",
       description: "Portfolio - Niranjan Kumar",
@@ -46,13 +50,13 @@ const Projects = () => {
       description: "ecommerce app",
       imgUrl: projImg9,
       link: "https://frontend-mern-ecommerce-sinha-niranjan.vercel.app/",
-    },{
+    },
+    {
       title: "Youtube-Clone",
       description: "Youtube Clone - video watching app",
       imgUrl: projImg8,
       link: "https://youttube-clone-sinha-niranjan.vercel.app/",
     },
-    
   ];
   const Projects2 = [
     {
@@ -61,6 +65,19 @@ const Projects = () => {
       imgUrl: projImg3,
       link: "https://sinha-niranjan.github.io/Music-app/",
     },
+    {
+      title: "E Waste",
+      description: "A website where you can sell your e waste",
+      imgUrl: projImg11,
+      link: "https://ewaste-frontend.vercel.app/",
+    },
+    {
+      title: "Todo List",
+      description: "Manage Your Task",
+      imgUrl: projImg7,
+      link: "https://todo-using-typescript-sinha-niranjan.vercel.app/",
+    },
+
     {
       title: "Whats App Clone",
       description: "Whats Clone - Chating APP",
@@ -73,7 +90,7 @@ const Projects = () => {
       imgUrl: projImg5,
       link: "",
     },
-  ]
+  ];
   return (
     <section className="project" id="projects">
       <Container>
@@ -126,7 +143,9 @@ const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second"> <Row>
+                <Tab.Pane eventKey="second">
+                  {" "}
+                  <Row>
                     {Projects2.map((project, index) => {
                       return (
                         <>
@@ -134,7 +153,8 @@ const Projects = () => {
                         </>
                       );
                     })}
-                  </Row></Tab.Pane>
+                  </Row>
+                </Tab.Pane>
                 <Tab.Pane eventKey="third">Loren Ipsum</Tab.Pane>
               </Tab.Content>
             </Tab.Container>
