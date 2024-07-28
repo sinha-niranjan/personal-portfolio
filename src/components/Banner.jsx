@@ -9,7 +9,8 @@ const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
-    "Web Developer",
+    "Software Engineer",
+    "Full Stack Web Developer",
     "Web Designer",
     "UI/UX Designer",
     "Backend Developer",
@@ -76,7 +77,7 @@ const Banner = () => {
                   <Nav.Link href="https://drive.google.com/file/d/1w9pz6rQJbiYIMP4PhMpf-iTpa5q-afCZ/view">
                     <button onClick={() => console.log("connect")}>
                       {" "}
-                      Resume <ArrowRightCircle size={25} />
+                      View Resume <ArrowRightCircle size={25} />
                     </button>
                   </Nav.Link>
                 </div>
