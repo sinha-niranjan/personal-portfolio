@@ -6,7 +6,8 @@ import logo from "../assets/img/logo.png";
 import NavIcon1 from "../assets/img/nav-icon1.svg";
 import NavIcon2 from "../assets/img/nav-icon2.svg";
 import NavIcon3 from "../assets/img/nav-icon3.svg";
-
+import github from "../assets/img/git hub.svg";
+import leetcode from "../assets/img/leetcode.svg";
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
@@ -67,6 +68,12 @@ export const NavBar = () => {
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/niranjan-kumar-015675238/">
                 <img src={NavIcon1} alt=""></img>
+              </a>
+              <a href="https://github.com/sinha-niranjan">
+                <img src={github} alt=""></img>
+              </a>
+              <a href="https://leetcode.com/u/niranjankumaraina/">
+                <img src={leetcode} alt=""></img>
               </a>
               <a href="https://www.facebook.com/niranjankumaraina">
                 <img src={NavIcon2} alt=""></img>

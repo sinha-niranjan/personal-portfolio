@@ -35,27 +35,36 @@ const Skill = () => {
         <Row>
           <Col>
             <div className="skill-bx">
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__bounce" : ""
-                  }
-                >
-              <h2>Skills</h2>
-              <p>
-                A skilled web developer possesses a versatile toolkit to craft
-                captivating digital experiences. They master programming
-                languages like HTML, CSS, and JavaScript, while staying updated
-                with emerging technologies. Their skills encompass responsive
-                design, UX/UI principles, backend development, database
-                management, and problem-solving. They blend creativity and
-                technical expertise to build dynamic websites that leave a
-                lasting impact.
-                
-              </p></div>
-              )}
-            </TrackVisibility>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div>
+                    <h2
+                      className={
+                        isVisible ? "animate__animated animate__backInLeft" : ""
+                      }
+                    >
+                      Skills
+                    </h2>
+                    <p
+                      className={
+                        isVisible
+                          ? "animate__animated animate__backInRight"
+                          : ""
+                      }
+                    >
+                      A skilled web developer possesses a versatile toolkit to
+                      craft captivating digital experiences. They master
+                      programming languages like HTML, CSS, and JavaScript,
+                      while staying updated with emerging technologies. Their
+                      skills encompass responsive design, UX/UI principles,
+                      backend development, database management, and
+                      problem-solving. They blend creativity and technical
+                      expertise to build dynamic websites that leave a lasting
+                      impact.
+                    </p>
+                  </div>
+                )}
+              </TrackVisibility>
               <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -84,6 +93,38 @@ const Skill = () => {
                 <div className="item">
                   <img src={meter2} alt="" />
                   <h5>Monog DB</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="" />
+                  <h5>My Sql</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="" />
+                  <h5>React Native</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="" />
+                  <h5>Python </h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="" />
+                  <h5>Machine Learning</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="" />
+                  <h5>Pandas</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="" />
+                  <h5>Numpy</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="" />
+                  <h5>React Redux</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="" />
+                  <h5>Socket.io</h5>
                 </div>
               </Carousel>
             </div>

@@ -26,7 +26,7 @@ const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
-  }, [text]);
+  }, [delta, text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -60,7 +60,7 @@ const Banner = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
+                    isVisible ? "animate__animated animate__fadeInLeft" : ""
                   }
                 >
                   <span className="tagline"> Welcome to my Portfolio</span>
@@ -73,10 +73,10 @@ const Banner = () => {
                     into beautiful and functional realities, one line of code at
                     a time.
                   </p>
-                  <Nav.Link href="#connect">
+                  <Nav.Link href="https://drive.google.com/file/d/1w9pz6rQJbiYIMP4PhMpf-iTpa5q-afCZ/view">
                     <button onClick={() => console.log("connect")}>
                       {" "}
-                      Let's connect <ArrowRightCircle size={25} />
+                      Resume <ArrowRightCircle size={25} />
                     </button>
                   </Nav.Link>
                 </div>
@@ -84,7 +84,17 @@ const Banner = () => {
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="Header Img" />
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeInRight" : ""
+                  }
+                >
+                  <img src={headerImg} alt="Header Img" />
+                </div>
+              )}
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>

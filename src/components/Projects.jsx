@@ -12,12 +12,20 @@ import projImg8 from "../assets/img/project-img8.png";
 import projImg9 from "../assets/img/project-img9.png";
 import projImg10 from "../assets/img/project-img10.png";
 import projImg11 from "../assets/img/project-img11.png";
+import thread from "../assets/img/thread.png";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "threads clone",
+      description:
+        " threads clone app build on react and chakra ui full stack website with real time chat ",
+      imgUrl: thread,
+      link: "https://threads-utcz.onrender.com/",
+    },
     {
       title: "Movix",
       description: "Latest Movies and Tv Shows",
@@ -29,13 +37,6 @@ const Projects = () => {
       description: "SnakeMania- ek gaming katha ",
       imgUrl: projImg2,
       link: "https://bright-marzipan-7acd42.netlify.app",
-    },
-    {
-      title: "Todo app",
-      description:
-        "a website which is created using next js 14 and user can see and set task after login",
-      imgUrl: projImg10,
-      link: "https://todoapp-nextjs-three.vercel.app/",
     },
 
     {
@@ -59,6 +60,13 @@ const Projects = () => {
     },
   ];
   const Projects2 = [
+    {
+      title: "Todo app",
+      description:
+        "a website which is created using next js 14 and user can see and set task after login",
+      imgUrl: projImg10,
+      link: "https://todoapp-nextjs-three.vercel.app/",
+    },
     {
       title: "Music Player",
       description: "Listen Music",
@@ -98,13 +106,19 @@ const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__bounce" : ""
-                  }
-                >
-                  <h2>Projects</h2>
-                  <p>
+                <div>
+                  <h2
+                    className={
+                      isVisible ? "animate__animated animate__backInLeft" : ""
+                    }
+                  >
+                    Projects
+                  </h2>
+                  <p
+                    className={
+                      isVisible ? "animate__animated animate__backInRight" : ""
+                    }
+                  >
                     Projects are the backbone of a web developer's growth. They
                     offer real-world challenges, opportunities to refine skills,
                     and a tangible portfolio to showcase expertise. Projects

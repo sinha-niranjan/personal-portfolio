@@ -8,9 +8,7 @@ const ProjectCard = ({ title, description, imgUrl, link }) => {
     <Col sm={6} md={4}>
       <TrackVisibility>
         {({ isVisible }) => (
-          <div
-            className={isVisible ? "animate__animated animate__heartBeat" : ""}
-          >
+          <div className={isVisible ? "animate__animated animate__pulse" : ""}>
             <div className="proj-imgbx">
               <img src={imgUrl} alt="" />
               <div className="proj-txtx">
