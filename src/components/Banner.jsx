@@ -74,7 +74,7 @@ const Banner = () => {
                     into beautiful and functional realities, one line of code at
                     a time.
                   </p>
-                  <Nav.Link href="https://drive.google.com/file/d/1w9pz6rQJbiYIMP4PhMpf-iTpa5q-afCZ/view">
+                  <Nav.Link href="https://drive.google.com/file/d/17kH5AzSWed9qI5LAJk3ILYHkshsR_rbo/view">
                     <button onClick={() => console.log("connect")}>
                       {" "}
                       View Resume <ArrowRightCircle size={25} />
